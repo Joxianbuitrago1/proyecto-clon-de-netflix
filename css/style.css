@@ -120,3 +120,91 @@ header nav a:hover{
 .botones {
     margin-left: 30px;
 }
+
+.box-pelicula {
+    height:100%;
+    width:100%;
+    display: block;
+    margin-top:10px;
+    border: 5px solid rgba(174, 173, 173, 0.886);
+    
+}
+
+footer {
+    position:relative;
+    width:100%;
+    background-color:red;
+    height: 70px;
+    padding: 30px 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer .socialmedia {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+footer .socialmedia li{
+    list-style-type:none;
+
+}
+
+footer .socialmedia li a {
+    font-size: 3em;
+    color: black;
+    
+    margin: 15px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+footer .socialmedia li a :hover {
+    color:#fff;
+    margin-right: 10px;
+    transform:translatey(-5px);
+
+}
+
+.to-top{
+	color:white;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:white;
+	text-decoration:double;
+    font-weight:bold;
+	transition:all .3s ease-out;
+    padding-left: 15px;
+    
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:15px;
+	border:solid .16em white;
+	border-radius:10em;
+	width:2em;
+	height:2em;
+	line-height:1.8em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:red;
+	border-color:white;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
